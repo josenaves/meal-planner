@@ -10,9 +10,7 @@ class App extends Component {
     const { store } = this.props
 
     store.subscribe(() => {
-      this.state(() => {
-        calendar: store.getState()
-      })
+      this.setState(() => { calendar: store.getState() })
     })
   }
 
